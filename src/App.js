@@ -56,7 +56,6 @@ function App() {
     if (userChoice === "scissor") {
       return computerChoice === "paper" ? "win" : "lose"
     }
-
   }
 
   return (
