@@ -29,9 +29,10 @@ export default class AppClass extends Component {
     };
 
     play = (userChoice) => {
-        let computerChoice = this.randomChoice()
-        this.setState({userChoice: this.state.userChoice = this.choice[userChoice], computerChoice: this.choice.computerChoice = this.choice[computerChoice], result: this.state.result = this.judgement(userChoice, computerChoice)})
-
+        let computerChoice2 = this.randomChoice()
+        this.setState({userChoice: this.choice[userChoice]})
+        this.setState({computerChoice: this.choice[computerChoice2]})
+        this.setState({result: this.judgement(userChoice, computerChoice2)})
       }
     
       randomChoice = () => {
